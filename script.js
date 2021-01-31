@@ -12,18 +12,7 @@ var gameStarted = false;
 var player2Started = false;
 var gameOver=false;
 
-
-
-var main = function (input) {
-  
-  var myOutputValue;
-
-
-  
-      playerDice1Roll = rollDice();
-      playerDice2Roll = rollDice();
-
-      /*
+  /*
     There are 2 players and players take turns.
     When a player clicks Submit, the game rolls 2 dice and shows the dice rolls, for example 3 and 6.
     The player picks the order of the dice they want. For example, if they wanted the number 63, they would specify that the 2nd dice goes first.
@@ -31,6 +20,12 @@ var main = function (input) {
 
       */
 
+var main = function (input) {
+  
+  var myOutputValue;
+
+      playerDice1Roll = rollDice();
+      playerDice2Roll = rollDice();
     
     if (gameStarted ){
       if (currentTurn==1){
@@ -65,10 +60,6 @@ var main = function (input) {
       return myOutputValue;
   
 };
-
-
-
-
 
 
 var rollDice = function(){
