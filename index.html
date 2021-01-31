@@ -52,6 +52,7 @@
   <body>
     <h1 id="header">SWE101: Beat That! 🚀</h1>
     <div id="container">
+
       <p>Input:</p>
       <input id="input-field" />
       <button id="submit-button">Submit</button>
@@ -62,8 +63,12 @@
     <script src="script.js"></script>
     <!-- Define button click functionality -->
     <script>
+
+      
       var button = document.querySelector("#submit-button");
       button.addEventListener("click", function () {
+
+        
         // Set result to input value
         var input = document.querySelector("#input-field");
         var result = main(input.value);
